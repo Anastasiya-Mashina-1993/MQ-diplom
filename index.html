@@ -37,7 +37,7 @@
 
     <h1 class="intro-title">Блог о творчестве, спорте, и образе жизни</h1>
 </header>
-<div class="trends-list">
+<section class="trends-list">
 	<h2 class="trends-title">Сейчас в тренде</h2>
 	<div class="trends">
 		<div class="trend first">
@@ -50,9 +50,9 @@
 						<a class="category" href="#0">interior</a>
 					</li>
 				</ul>
-				<h2 class="trend-name">
+				<h3 class="trend-name">
 					<a class="trend-name" href="#0">Сейчас в тренде: сад  на подоконнике</a>
-				</h2>
+				</h3>
 			</div>
 		</div>
 		<div class="trend two">
@@ -62,9 +62,9 @@
 						<a class="category" href="#0">food</a>
 					</li>
 				</ul>
-				<h2 class="trend-name">
+				<h3 class="trend-name">
 					<a class="trend-name" href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a>
-				</h2>
+				</h3>
 			</div>
 		</div>
 		<div class="trend three">
@@ -77,9 +77,9 @@
 						<a class="category" href="#0">travel</a>
 					</li>
 				</ul>
-				<h2 class="trend-name">
+				<h3 class="trend-name">
 					<a class="trend-name" href="#0">собираемся в первый поход в горы</a>
-				</h2>
+				</h3>
 			</div>
 		</div>
 		<div class="trend four">
@@ -92,13 +92,13 @@
 						<a class="category" href="#0">health</a>
 					</li>
 				</ul>
-				<h2 class="trend-name">
+				<h3 class="trend-name">
 					<a class="trend-name" href="#0">Сейчас в тренде: сколько витамина в лимонах?</a>
-				</h2>
+				</h3>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 <div class="content">
 <main class="post-list">
   <article class="post"> 
@@ -384,16 +384,24 @@
    </section>
 </aside>
 </div>
-<div class="shop">
+<section class="shop">
 	<h2 class="shop-title">Наши изделия</h2>
 	<div class="products">
 		<article class="product">
 			<div class="product-imgbox">
-				<img class="product-img" src="images/shop-item-desk1.jpg" alt="Подушка">
+				<picture class="product-img">
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile1.jpg">
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet1.jpg">
+					<img class="product-img" src="images/shop-item-desk1.jpg" alt="Подушка">
+				</picture>
 			</div>
 			<div class="product-body">
 				<div class="product-content">
-					<h4 class="product-title">Подушки на диван</h4>
+					<h3 class="product-title">Подушки на диван</h3>
 					<div class="product-description">
 						<p>Набор из двух подушек с модными принтами. Видео о создании <a class="shop-text" href="#">здесь</a></p>
 					</div>
@@ -415,11 +423,19 @@
 		</article>
 		<article class="product">
 			<div class="product-imgbox">
-				<img class="product-img" src="images/shop-item-desk2.jpg" alt="Подушка">
+				<picture class="product-img">
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile2.jpg">
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet2.jpg">
+					<img class="product-img" src="images/shop-item-desk2.jpg" alt="Подушка">
+				</picture>
 			</div>
 			<div class="product-body">
 				<div class="product-content">
-					<h4 class="product-title">Кукла «Зайчик»</h4>
+					<h3 class="product-title">Кукла «Зайчик»</h3>
 					<div class="product-description">
 						<p>Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a class="shop-text" href="#"> весенняя серия постов</a> в блоге и несколько подкастов</p>
 					</div>
@@ -437,11 +453,19 @@
 		</article>
 		<article class="product">
 			<div class="product-imgbox">
-				<img class="product-img" src="images/shop-item-desk3.jpg" alt="Подушка">
+				<picture class="product-img">
+					<source
+					media="(max-width: 640px)"
+					srcset="images/shop-item-mobile3.jpg">
+					<source
+					media="(min-width: 641px) and (max-width: 1199px)"
+					srcset="images/shop-item-tablet3.jpg">
+					<img class="product-img" src="images/shop-item-desk3.jpg" alt="Подушка">
+				</picture>
 			</div>
 			<div class="product-body">
 				<div class="product-content">
-					<h4 class="product-title">Шестиугольная рамка</h4>
+					<h3 class="product-title">Шестиугольная рамка</h3>
 					<div class="product-description">
 						<p>Необычная рамка для украшения дома из видео <a class="shop-text" href="#">«Как сделать рамку из подручных средств за 30 минут"</a></p>
 					</div>
@@ -462,7 +486,7 @@
 			</div>
 		</article>
 	</div>
-</div>
+</section>
 <footer class="footer">
   <div class="footer-wrapper">
   	<address class="footer-address">
